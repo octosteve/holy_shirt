@@ -1,2 +1,4 @@
 List all of the shirts
 GET /shirts => All the shirts!
+List all of the tags
+GET /tags => All the tags
