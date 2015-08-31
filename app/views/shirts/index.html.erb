@@ -1,0 +1,11 @@
+<h1>All the shirts</h1>
+
+<ul>
+
+<% @shirts.each do |shirt| %>
+    <li><%= shirt.name %>
+      by <%= shirt.artist %>
+      <%= image_tag(shirt.image_url) %>
+    </li>
+<% end %>
+</ul>

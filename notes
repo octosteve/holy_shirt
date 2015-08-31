@@ -1,0 +1,2 @@
+List all of the shirts
+GET /shirts => All the shirts!
