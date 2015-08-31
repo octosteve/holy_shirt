@@ -1,13 +1,2 @@
-<% if @tag.errors.any? %>
-  <ul>
-    <% @tag.errors.full_messages.each do |error|  %>
-       <li><%= error %></li>
-    <% end %>
-  </ul>
-<% end %>
-
-<%= form_for @tag do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <%= f.submit %>
-<% end %>
+<h1>Update a tag</h1>
+<%= render 'form' %>
