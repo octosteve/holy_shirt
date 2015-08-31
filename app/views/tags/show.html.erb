@@ -1,3 +1,4 @@
 <h1><%= @tag.name %></h1>
 
 <%= link_to "Edit this Tag", edit_tag_path(@tag) %>
+<%= link_to "Delete this tag", @tag, method: :delete %>
