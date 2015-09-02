@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   # get '/shirts', to: "shirts#index"
   # get '/tags', to: "tags#index"
   resources :shirts, only: [:index]
-  resources :tags
+  resources :tags, only: [:index, :edit]
   # post 'tags', to: 'tags#create'
 end

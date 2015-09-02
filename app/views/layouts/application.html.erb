@@ -7,10 +7,14 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <!-- <a href="/random_shirt">GO BUY MOAR SHIRTS</a> -->
-  <%# link_to "GO BUY MOOOOAR SHIRTS", "/random_shirt" %>
-  <%= link_to "GO BUY MOOOOAAAAAR SHIRTS", random_shirt_path %>
-<%= yield %>
+  <h2><%= link_to "Holy Shirt", root_path %></h2>
+  <ul>
+    <li><%= link_to "See all the shirts", shirts_path %> </li>
+    <li>
+      <%= link_to "Buy a new shirt", random_shirt_path %>
+    </li>
+  </ul>
+  <%= yield %>
 
 </body>
 </html>

@@ -1,4 +1,6 @@
-List all of the shirts
-GET /shirts => All the shirts!
-List all of the tags
-GET /tags => All the tags
+Links to shirts on the homepage
+Add Bootstrap
+Persistent search
+Be able create and update shirts
+Shirts tags and make them linkable
+User authentication (Stretch Goal)
