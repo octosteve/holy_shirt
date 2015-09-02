@@ -47,3 +47,6 @@ end
 
 
 gem 'pry-rails'
+
+# For the prettiez
+gem 'bootstrap-sass', '~> 3.3.5'
