@@ -17,8 +17,12 @@
         <%= f.label :url %>
         <%= f.url_field :url, class: "form-control", required: true %>
       </div>
+      <ul>
+        <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name do |b| %>
+        <li> <%= b.check_box %> <%= b.label %></li>
+        <% end %>
+      </ul>
       <%= f.submit nil, class: "btn btn-success" %>
     <% end %>
-
   </div>
 </div>

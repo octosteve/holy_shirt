@@ -8,7 +8,7 @@ class ShirtsController < ApplicationController
   end
 
   def create
-    @shirt = Shirt.new(safe_shirt)
+    @shirt = Shirt.new(shirt_params)
     if @shirt.save
       flash[:notice] = "You successfully create a shirt! ZOMG"
       redirect_to @shirt
@@ -37,6 +37,6 @@ class ShirtsController < ApplicationController
 
   private
   def shirt_params
-    params.require(:shirt).permit(:name, :artist, :image_url, :url)
+    params.require(:shirt).permit(:name, :artist, :image_url, :url, tag_ids: [])
   end
 end
