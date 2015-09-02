@@ -1,4 +1,9 @@
-<li><%= shirt.name %>
-  by <%= shirt.artist %>
-  <%= image_tag(shirt.image_url) %>
-</li>
+<div class='col-xs-12 col-sm-6'>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <%= truncate(shirt.name, length: 10) %>
+    by <%= shirt.artist %>
+    <%= image_tag(shirt.image_url, class: 'img-responsive') %>
+  </div>
+</div>
+</div>
