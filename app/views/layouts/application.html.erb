@@ -15,7 +15,12 @@
         <li> <%= link_to "Buy a new shirt", random_shirt_path %> </li>
       </ul>
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-3">
+      <% if user_signed_in? %>
+         Welcome, <%= current_user.username %>
+      <% end %>
+    </div>
+    <div class="col-xs-3">
       <form action="/search" method="get">
         <input type="search" name="q" id="search">
         <input type="submit" value="Search!">

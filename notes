@@ -7,8 +7,11 @@
 
 I should be able to create a note on a shirt, and not see other people's notes
 
-Create a user model
+-Create a user model-
 Create a way for a user to sign up
+  GET /sign-up # => Shows a form with username, password and confirmation
+    Form submits to /sign-up
+  POST /sign-up # => Create user in the database, and "Sign them in"
 Create a way for a user to sign in
 Create a way to sign out
 Create a way to identify which user is logged in.

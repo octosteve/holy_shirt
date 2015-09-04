@@ -1,0 +1,18 @@
+<h1>Sign Up!</h1>
+<%= form_tag '/sign-up' do %>
+  <fieldset>
+    <div class="">
+      <%= label_tag "Username" %>
+      <%= text_field_tag "user[username]" %>
+    </div>
+    <div class="">
+      <%= label_tag "Password" %>
+      <%= password_field_tag "user[password]" %>
+    </div>
+    <div class="">
+      <%= label_tag "Password Confirmation" %>
+      <%= password_field_tag "user[password_confirmation]" %>
+    </div>
+    <%= submit_tag "Sign up!", class: "btn btn-success" %>
+  </fieldset>
+<% end %>
