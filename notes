@@ -3,6 +3,12 @@
 -Persistent search-
 -Be able create and update shirts-
 -Shirts tags and make them linkable-
+-Bootstrap Styling-
 
-User authentication (Stretch Goal)
-Bootstrap Styling
+I should be able to create a note on a shirt, and not see other people's notes
+
+Create a user model
+Create a way for a user to sign up
+Create a way for a user to sign in
+Create a way to sign out
+Create a way to identify which user is logged in.
