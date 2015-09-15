@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  get 'registrations/new'
-
   root "home#index"
-  resources :shirts, except: [:destroy]
+  resources :shirts, except: [:destroy] do
+    resources :comments, only: :create
+  end
   resources :tags, only: [:index, :edit]
   get 'random_shirt', to: "random_shirt#index"
   get 'search', to: 'search#index'
