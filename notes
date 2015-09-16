@@ -1,17 +1,9 @@
--links to shirts-
--Add Bootstrap-
--Persistent search-
--Be able create and update shirts-
--Shirts tags and make them linkable-
--Bootstrap Styling-
-
-I should be able to create a note on a shirt, and not see other people's notes
-
--Create a user model-
-Create a way for a user to sign up
-  GET /sign-up # => Shows a form with username, password and confirmation
-    Form submits to /sign-up
-  POST /sign-up # => Create user in the database, and "Sign them in"
 Create a way for a user to sign in
+
 Create a way to sign out
-Create a way to identify which user is logged in.
+Protect actions.
+  Only logged in users can create and update new shirts.
+  Comments should be associated to a user.
+Deploy to Heroku
+  Deal with the pain
+  Rejoice

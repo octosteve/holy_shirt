@@ -9,4 +9,7 @@ Rails.application.routes.draw do
 
   get 'sign-up', to: 'registrations#new'
   post 'sign-up', to: 'registrations#create'
+
+  post   'sign-in', to: 'sessions#create'
+  delete 'sign-out', to: 'sessions#destroy'
 end
