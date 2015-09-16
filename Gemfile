@@ -54,4 +54,4 @@ gem 'pry-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
 
 # For heroku
-# gem 'pg', group: :production
+gem 'pg', group: :production
