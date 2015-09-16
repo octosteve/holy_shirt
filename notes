@@ -1,9 +1,10 @@
-Create a way for a user to sign in
+-Create a way for a user to sign in
 
-Create a way to sign out
-Protect actions.
-  Only logged in users can create and update new shirts.
-  Comments should be associated to a user.
+-Create a way to sign out
+-Protect actions.
+-  Only logged in users can create and update new shirts.
+  -Comment box only visible if logged in
+  -Comments should be associated to a user.
 Deploy to Heroku
   Deal with the pain
   Rejoice
